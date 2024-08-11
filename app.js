@@ -9,7 +9,7 @@ const submit = document.getElementById('submit')
 submit.addEventListener('click', () => {
     submitSchedule()
 })
-var mysql = require('mysql');
+var mysql = require('mysql')
 
 var con = mysql.createConnection({
   host: "localhost",
@@ -22,4 +22,9 @@ con.connect(function(err) {
   console.log("Connected!");
 });
 
-submitSchedule()
+function submitSchedule() {
+    //GET ALL database entries that match block 1, 2, 3, 4, 5
+    //display 
+    //links to other schedules
+    //display own schedule in table
+}
